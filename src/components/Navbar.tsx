@@ -27,7 +27,7 @@ const Navbar = () => {
               alt="PNDAS Nursing College"
               className="h-16 animate-pulse"
             />
-            <h1 className="text-[#FFD700] font-bold text-lg md:text-xl lg:text-2xl">
+            <h1 style={{ color: "#C5A572" }} className="font-bold text-lg md:text-xl lg:text-2xl">
               PRAMOTH NATH DAS ACADEMY OF NURSING
             </h1>
           </div>
@@ -43,6 +43,7 @@ const Navbar = () => {
                     isActive ? "text-secondary font-bold" : "text-primary-foreground"
                   }`
                 }
+                style={{ color: "#C5A572" }}
               >
                 {link.label}
               </NavLink>
@@ -82,6 +83,7 @@ const Navbar = () => {
                       isActive ? "bg-primary-light text-secondary font-bold" : "text-primary-foreground"
                     }`
                   }
+                  style={{ color: "#C5A572" }}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
