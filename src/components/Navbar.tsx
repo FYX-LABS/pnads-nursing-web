@@ -11,12 +11,15 @@ const Navbar = () => {
     <nav className="bg-background border-b">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">
             <img
               src="/lovable-uploads/06f357d6-ad3a-4110-95ea-ea1299aa8e2d.png"
               alt="PNDAS Nursing College"
               className="h-16"
             />
+            <h1 className="text-[#FFD700] font-bold text-lg md:text-xl lg:text-2xl">
+              PRAMOTH NATH DAS ACADEMY OF NURSING
+            </h1>
           </div>
 
           {/* Desktop Menu */}
