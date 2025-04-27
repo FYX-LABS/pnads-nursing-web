@@ -50,11 +50,12 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border selection:bg-primary/10 selection:text-primary;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
@@ -71,4 +72,36 @@
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
 }
