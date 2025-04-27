@@ -1,32 +1,17 @@
-
 import Navbar from "@/components/Navbar";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary to-primary-dark text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Excellence in Nursing Education
-            </h1>
-            <p className="text-xl mb-8 max-w-2xl">
-              Empowering the next generation of healthcare professionals through quality education and hands-on experience.
-            </p>
-            <Button className="bg-secondary hover:bg-secondary-light text-primary text-lg px-8 py-6">
-              Start Your Journey
-            </Button>
-          </div>
-        </div>
-      </section>
+      <HeroSlideshow />
 
       {/* Programs Section */}
-      <section id="programs" className="py-16 bg-gray-50">
+      <section id="programs" className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-primary mb-12">
             Our Programs
@@ -80,7 +65,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-primary mb-12">
             Why Choose PNDAS Nursing?
@@ -112,7 +97,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-white py-12">
+      <footer className="bg-primary text-primary-foreground py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
@@ -142,7 +127,7 @@ const Index = () => {
               <p>Nursing City, NC 12345</p>
             </div>
           </div>
-          <div className="border-t border-white/20 mt-8 pt-8 text-center">
+          <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
             <p>&copy; 2024 PNDAS Nursing College. All rights reserved.</p>
           </div>
         </div>
